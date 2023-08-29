@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se - PEGGUE</title>
-    <link rel="shortcut icon" href="../img/ico.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/cadastro.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco - Peggue</title>
+  <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
+</head>
+<body>  
+
   <nav class="navbar navbar-expand-lg navbar-dark corNavbar">
     <a class="navbar-brand" href="index.html"><img src="../img/Design.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +28,6 @@
             <a class="dropdown-item" href="vagasFree.html">Freelancer</a>
             <a class="dropdown-item" href="vagasGeral.html">Vagas geral</a>
             <a class="dropdown-item" href="formulario.html">Cadastre-se</a>
-            
           </div>
        
         <li class="nav-item dropdown">
@@ -49,45 +50,61 @@
       <a href="login-inicial.html"><button class="btn btn-sm ml-auto botaodelogin" type="button">Login</button></a>
     </div>
   </nav>
-  <!--FINAL DA NAVBAR-->
 
-
-      <form class="form-box mt-5">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Nome Completo</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fulano da Silva">
+<div class="container">
+    <h1 class="mt-4">Fale Conosco</h1>
+    <form action="processar-formulario.php" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome/Empresa:</label>
+            <input type="text" id="nome" name="nome" class="form-control">
         </div>
 
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" id="email" name="email" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone para Contato:</label>
+            <input type="tel" id="telefone" name="telefone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="interesses" class="form-label">Solicitação</label>
+            <select class="form-control form-control-sm">
+                <option>Dúvida</option>
+                <option>Sugestão</option>
+                <option>Reclamação</option>
+               
+            </select>
+        </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Endereço de email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            <label for="mensagem" class="form-label">Mensagem:</strong></label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required>
+        </textarea>
           </div>
 
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Senha</label>
-            <input type="password" class="form-control" id="exampleFormControlInput1">
-          </div>
-
-          
-        
-        <a href="#"><button class="btn btn-sm ml-auto botaodelogin btn-block mt-4" type="button">Cadastrar</button></a>
-        
-      </form>
+        <a href="#">
+            <button type="#" class="btn btn-dark">Enviar</button>
+        </a>
 
 
 
-      <!-- Footer -->
-<footer class="footer mt-5">
+
+<!-- Footer -->
+<footer class="footer">
     <div class="container">
       <p>&copy; 2023 PEGGUE. Todos os direitos reservados.</p>
     </div>
   </footer>
+  
+  
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     
   </script>
-    
-</body>
-</html>
+  
+  </body>
+  </html>
