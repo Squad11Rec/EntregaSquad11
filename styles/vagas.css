@@ -1,0 +1,58 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.corNavbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+}
+
+.botaodelogin {
+    background-color: #FFC107 !important;
+    /* Amarelo */
+    color: #333;
+    width: 100px;
+}
+
+.collapse li a {
+    font-size: 20px;
+}
+
+.card {
+    transition: transform 0.2s;
+   
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.0);
+}
+
+.card-body {
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+    color: white;
+}
+
+.container > h1 {
+    color: rgb(5, 7, 98);
+}
+
+.container h1 span {
+    color: #FFC107;
+}
+
+.btn .btn-warning {
+    background-color: #FFC107;
+}
+
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}

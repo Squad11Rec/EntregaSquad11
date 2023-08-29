@@ -1,0 +1,53 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+    color: white;
+  }
+
+.corNavbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+}
+
+.botaodelogin {
+    background-color: #FFC107 !important;
+    /* Amarelo */
+    color: #333;
+    width: 100px;
+}
+
+.container-bg {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+    color: white;
+    padding: 60px 0;
+  }
+
+  .collapse li a {
+    font-size: 20px;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-box {
+    background-color: rgba(235, 206, 38, 0.272);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    color: white;
+  }
+
+  .mt-4 a {
+    text-decoration: none;
+    color: rgb(251, 236, 31);
+  }

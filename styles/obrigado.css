@@ -1,0 +1,43 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  body{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+
+  }
+  
+  .container .row .jumbotron{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+    color: white;
+  }
+  
+  .corNavbar {
+    background: rgb(0,0,0);
+    background: linear-gradient(82deg, rgba(0,0,0,1) 0%, rgba(20,11,94,1) 90%);
+    }
+  
+    .botaodelogin {
+      background-color: #FFC107 !important; /* Amarelo */
+      color: #333;
+      width: 100px;
+    }
+  
+  
+    .collapse li a {
+      font-size: 20px;
+    }
+
+    .conteudo {
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding-top: 16%;
+     
+    }
+
+
+

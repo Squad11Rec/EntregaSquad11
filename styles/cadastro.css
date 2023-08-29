@@ -1,0 +1,38 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+    color: white;
+  }
+
+.corNavbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+}
+
+.botaodelogin {
+    background-color: #FFC107 !important;
+    /* Amarelo */
+    color: #333;
+    width: 100px;
+}
+
+
+  .collapse li a {
+    font-size: 20px;
+  }
+
+  .form-box{
+    width: 50%;
+    margin: auto;
+    color: white;
+  }
+
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+  }
