@@ -3,29 +3,40 @@
 
 
 
-CREATE TABLE Faz (
-idCurso INTEGER,
-MatriculaAluno INTEGER
+CREATE TABLE Curso (
+idCurso INTEGER PRIMARY KEY,
+Turma VARCHAR(30),
+Conteudo VARCHAR(100),
+CargaHoraria NUMERIC(5)
 )
 
 CREATE TABLE Dar Aula (
 idCurso INTEGER,
-MatriculaVoluntario INTEGER
+MatriculaVoluntario INTEGER,
+FOREIGN KEY(idCurso) REFERENCES Curso (idCurso)
 )
 
 CREATE TABLE Voluntario (
-MatriculaVoluntario INTEGER PRIMARY KEY,
+Especialidade VARCHAR(50),
+Telefone NUMERIC(12),
+Endereco VARCHAR(50),
 Nome VARCHAR(50),
-Especialidade VARCHAR(30),
-Telefone NUMERIC(11),
-Endereco VARCHAR(50)
+MatriculaVoluntario INTEGER PRIMARY KEY,
+CPF NUMERIC(12)
+)
+
+CREATE TABLE Faz (
+idCurso INTEGER,
+MatriculaAluno INTEGER,
+FOREIGN KEY(idCurso) REFERENCES Curso (idCurso)
 )
 
 CREATE TABLE Aluno (
-MatriculaAluno INTEGER PRIMARY KEY,
 Nome VARCHAR(50),
-Endereço VARCHAR(50),
-Telefone NUMERIC(11)
+Endereço VARCHAR(40),
+Telefone NUMERIC(12),
+MatriculaAluno INTEGER PRIMARY KEY,
+CPF NUMERIC(11)
 )
 
 CREATE TABLE Candidatar (
@@ -35,48 +46,39 @@ FOREIGN KEY(MatriculaAluno) REFERENCES Aluno (MatriculaAluno)
 )
 
 CREATE TABLE Vagas (
-idVagas INTEGER PRIMARY KEY,
-Freelance VARCHAR(100),
-CLT VARCHAR(100),
-PJ VARCHAR(100)
+PJ VARCHAR(50),
+Freelance VARCHAR(50),
+CLT VARCHAR(50),
+idVagas INTEGER PRIMARY KEY
 )
 
 CREATE TABLE Gerencia (
-CNPJ CHAR(10),
+idEmpresa INTEGER,
 idVagas INTEGER,
 FOREIGN KEY(idVagas) REFERENCES Vagas (idVagas)
 )
 
 CREATE TABLE Empresa (
-CNPJ CHAR(14) PRIMARY KEY,
+Ramo VARCHAR(30),
 Nome VARCHAR(50),
-Ramo VARCHAR(30)
+idEmpresa INTEGER PRIMARY KEY,
+CNPJ NUMERIC(11)
 )
 
 CREATE TABLE Efetua (
-CNPJ CHAR(10),
+idEmpresa INTEGER,
 idPatrocinador INTEGER,
-FOREIGN KEY(CNPJ) REFERENCES Empresa (CNPJ)
+FOREIGN KEY(idEmpresa) REFERENCES Empresa (idEmpresa)
 )
 
 CREATE TABLE Patrocinio (
-idPatrocinador INTEGER PRIMARY KEY,
-ValorInvestido DECIMAL(30),
-RegistroPatrocinio VARCHAR(50)
+ValorInvestido DECIMAL(100),
+RegistroPatrocinio VARCHAR(30),
+idPatrocinador INTEGER PRIMARY KEY
 )
 
-CREATE TABLE Curso (
-idCurso INTEGER PRIMARY KEY,
-Nome VARCHAR(30),
-Turma CHAR(10),
-Conteudo VARCHAR(100),
-CargaHoraria NUMERIC(10)
-)
-
-ALTER TABLE Faz ADD FOREIGN KEY(idCurso) REFERENCES Curso (idCurso)
-ALTER TABLE Faz ADD FOREIGN KEY(MatriculaAluno) REFERENCES Aluno (MatriculaAluno)
-ALTER TABLE Dar Aula ADD FOREIGN KEY(idCurso) REFERENCES Curso (idCurso)
 ALTER TABLE Dar Aula ADD FOREIGN KEY(MatriculaVoluntario) REFERENCES Voluntario (MatriculaVoluntario)
+ALTER TABLE Faz ADD FOREIGN KEY(MatriculaAluno) REFERENCES Aluno (MatriculaAluno)
 ALTER TABLE Candidatar ADD FOREIGN KEY(idVagas) REFERENCES Vagas (idVagas)
-ALTER TABLE Gerencia ADD FOREIGN KEY(CNPJ) REFERENCES Empresa (CNPJ)
+ALTER TABLE Gerencia ADD FOREIGN KEY(idEmpresa) REFERENCES Empresa (idEmpresa)
 ALTER TABLE Efetua ADD FOREIGN KEY(idPatrocinador) REFERENCES Patrocinio (idPatrocinador)
