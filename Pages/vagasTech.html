@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME - Peggue</title>
+  <title>Vagas Tech - Peggue</title>
+  <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="../styles/cursos.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,43 +16,37 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark corNavbar">
     <a class="navbar-brand" href="index.html"><img src="../img/Design.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Sobre nós</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="teste.html">Teste Vocacional</a>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Cursos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <a class="dropdown-item" href="cursoTech.html">Cursos Tech</a>
-            <a class="dropdown-item" href="cursoGeral.html">Cursos em Geral</a>
-
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Vagas
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
             <a class="dropdown-item" href="vagasTech.html">Tech</a>
             <a class="dropdown-item" href="vagasFree.html">Freelancer</a>
             <a class="dropdown-item" href="vagasGeral.html">Vagas geral</a>
+            <a class="dropdown-item" href="formulario.html">Cadastre-se</a>
           </div>
-          <li class="nav-item">
-            <a class="nav-link" href="formulario.html">Cadastre-se</a>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cursos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="cursoTech.html">Cursos Tech</a>
+            <a class="dropdown-item" href="cursoGeral.html">Cursos em Geral</a>
+      
+          </div>
         </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="teste.html">Teste Vocacional</a>
+        </li>
+       
         </li>
       </ul>
       <a href="login-inicial.html"><button class="btn btn-sm ml-auto botaodelogin" type="button">Login</button></a>
@@ -68,16 +63,16 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/st.png" class="card-img-top" alt="Curso 1">
+          <img src="../img/st.png" class="card-img-top" alt="Curso 1">
           <div class="card-body">
             <h4 class="card-title">Suporte Técnico</h4>
             <p class="card-text">
             <p>Salário a combinar, CLT</p>
-            <br>
+           
             Função: Oferecer assistência e soluções para problemas técnicos.</p>
-            <div class="d-flex justify-content-start mt-4">
+            <div class="d-flex justify-content-start mt-5">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -86,7 +81,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/redes.png" class="card-img-top" alt="Curso 3">
+          <img src="../img/redes.png" class="card-img-top" alt="Curso 3">
           <div class="card-body">
             <h4 class="card-title">Técnico de Instalação</h4>
             <p class="card-text">
@@ -94,7 +89,7 @@
             Função: Faz instalação e manutenção de equipamentos e sistemas, mantém contato com clientes e realiza visita
             técnica.</p>
             <div class="container mt-5">
-              <button class="btn btn-warning">Detalhes</button>
+                 <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
             </div>
           </div>
         </div>
@@ -102,16 +97,15 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/anasup.png" class="card-img-top" alt="Curso 2">
+          <img src="../img/anasup.png" class="card-img-top" alt="Curso 2">
           <div class="card-body">
             <h4 class="card-title">Analista de Suporte de TI</h4>
             <p class="card-text">
             <p>Salário a combinar, CLT</p>
-            Função:
-            Prestar suporte básico em TI para resolver problemas e fornecer assistência aos usuários.</p>
+            Função: Prestar suporte básico em TI para resolver problemas e fornecer assistência aos usuários.</p>
             <div class="d-flex justify-content-start mt-4">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -120,7 +114,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/dadosjr.png" class="card-img-top" alt="Curso 6">
+          <img src="../img/dadosjr.png" class="card-img-top" alt="Curso 6">
           <div class="card-body">
             <h4 class="card-title">Analista de Dados Júnior</h4>
             <p class="card-text">
@@ -129,7 +123,7 @@
             dados.</p>
             <div class="d-flex justify-content-start mt-4">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -138,16 +132,15 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/testad.png" class="card-img-top" alt="Curso 4">
+          <img src="../img/testad.png" class="card-img-top" alt="Curso 4">
           <div class="card-body">
             <h4 class="card-title">Testador de Qualidade de Software</h4>
             <p class="card-text">
-            <p>Salário a combinar, CLT</p>
-            <br>
+            <p>Salário a combinar, CLT</p>            
             Função: Testar aplicativos e software em busca de erros e bugs.</p>
-            <div class="d-flex justify-content-start mt-4">
+            <div class="d-flex justify-content-start mt-5">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -156,16 +149,16 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/supredes.png" class="card-img-top" alt="Curso 4">
+          <img src="../img/supredes.png" class="card-img-top" alt="Curso 4">
           <div class="card-body">
             <h4 class="card-title">Suporte de Redes</h4>
             <p class="card-text">
             <p>Salário a combinar, CLT</p>
-            <br>
+            
             Função: Fornecer assistência na manutenção e configuração de redes de computadores.</p>
-            <div class="d-flex justify-content-start mt-4">
+            <div class="d-flex justify-content-start mt-5">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -174,17 +167,16 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/desegraf.png" class="card-img-top" alt="Curso 2">
+          <img src="../img/desegraf.png" class="card-img-top" alt="Curso 2">
           <div class="card-body">
             <h4 class="card-title">Designer Gráfico</h4>
             <p class="card-text">
             <p>Salário a combinar, CLT</p>
-            <br>
             Função : Criar elementos visuais para sites, mídias sociais e materiais impressos. Pode ser uma opção para
             quem tem habilidades de design.</p>
-            <div class="d-flex justify-content-start mt-4">
+            <div class="d-flex justify-content-start mt-5">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -193,7 +185,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/desback.png" class="card-img-top" alt="Curso 2">
+          <img src="../img/desback.png" class="card-img-top" alt="Curso 2">
           <div class="card-body">
             <h4 class="card-title">Desenvolvedor Web Back-End</h4>
             <p class="card-text">
@@ -202,7 +194,7 @@
             aprendido por meio de recursos online.</p>
             <div class="d-flex justify-content-start mt-4">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -211,7 +203,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/desweb.png" class="card-img-top" alt="Curso 2">
+          <img src="../img/desweb.png" class="card-img-top" alt="Curso 2">
           <div class="card-body">
             <h4 class="card-title">Desenvolvedor Web Front-End</h4>
             <p class="card-text">
@@ -220,7 +212,7 @@
             JavaScript. Pode ser aprendido através de cursos online.</p>
             <div class="d-flex justify-content-start mt-4">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -229,7 +221,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/busca.png" class="card-img-top" alt="Curso 2">
+          <img src="../img/busca.png" class="card-img-top" alt="Curso 2">
           <div class="card-body">
             <h4 class="card-title">Especialista em SEO</h4>
             <h6>(Otimização de Mecanismos de Busca)</h6>
@@ -239,7 +231,7 @@
             online.</p>
             <div class="d-flex justify-content-start mt-4">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -248,7 +240,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/midias.png" class="card-img-top" alt="Curso 5">
+          <img src="../img/midias.png" class="card-img-top" alt="Curso 5">
           <div class="card-body">
             <h4 class="card-title">Especialista em Mídias Sociais</h4>
             <p class="card-text">
@@ -257,7 +249,7 @@
             </p>
             <div class="d-flex justify-content-start mt-4">
               <div class="container mt-5">
-                <button class="btn btn-warning">Detalhes</button>
+                   <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
               </div>
               </div><!--divflexstart-->
           </div>
@@ -266,7 +258,7 @@
 
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/img/cibers.png" class="card-img-top" alt="Curso 2">
+          <img src="../img/cibers.png" class="card-img-top" alt="Curso 2">
           <div class="card-body">
             <h4 class="card-title">Analista de Segurança Cibernética</h4>
             <p class="card-text">
@@ -274,7 +266,7 @@
             Função: Responsável por proteger sistemas de computadores, redes e dados contra ameaças cibernéticas.</p>
             <div class="d-flex justify-content-start mt-4">
             <div class="container mt-5">
-              <button class="btn btn-warning">Detalhes</button>
+                 <a href="formulario.html"><button class="btn btn-warning mt-5">Inscreva-se</button></a>
             </div>
             </div><!--divflexstart-->
           </div>
