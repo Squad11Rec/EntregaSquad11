@@ -61,5 +61,9 @@
     color: white;
   }
 
+
+  .display-5 > span {
+    color: #FFC107;
+  }
  
   
