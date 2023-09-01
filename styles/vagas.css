@@ -56,3 +56,43 @@
     text-align: center;
     color: rgb(0, 0, 0);
 }
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-title,
+.card-text {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.fluid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-footer {
+    position: relative;
+    background: linear-gradient(82deg, rgba(0, 0, 0, 1) 0%, rgba(20, 11, 94, 1) 90%);
+}
+
+.remover-sub {
+    text-decoration: none !important;
+}
+
+.vagapcd {
+    color: #FFC107;
+    font-weight: bold;
+}
