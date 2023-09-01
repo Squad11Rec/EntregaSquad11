@@ -29,7 +29,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover .card-img-top {
+.card:hover .card-img-top .card-body{
     transform: scale(1.0);
 }
 
@@ -48,6 +48,7 @@
 
 .btn .btn-warning {
     background-color: #FFC107;
+   
 }
 
 
@@ -67,4 +68,12 @@
 .card-text {
     flex: 1; 
     margin-bottom: 0; 
+}
+
+.fluid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+    margin-left: 10%;
 }
